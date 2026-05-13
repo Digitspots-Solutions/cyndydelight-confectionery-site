@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyndyDelight Confectionery - Sweetening Life's Special Moments</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Lato:wght@300;400;700&display=swap">
+    <style>
+        :root {
+            --color-primary: #242222;
+            --color-accent: #ba6e22;
+            --color-bg: #F2EDE8;
+            --color-text: #1C1C1C;
+            --color-surface: #24211e;
+            --color-secondary-accent: #717270;
+            --font-display: 'Barlow Condensed', sans-serif;
+            --font-body: 'Lato', sans-serif;
+            --border-radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(242, 237, 232, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.2rem 5%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-accent);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--color-text);
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 70px;
+            right: -100%;
+            width: 300px;
+            height: calc(100vh - 70px);
+            background: var(--color-bg);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+            z-index: 999;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-menu ul a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 0.5rem 0;
+        }
+
+        .mobile-menu ul a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0s;
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            color: white;
+            padding: 0 5%;
+            max-width: 900px;
+        }
+
+        .hero-content h1 {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero-content .tagline {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--color-accent);
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background: #9e5c1d;
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* About Section */
+        #about {
+            padding: 80px 5%;
+            background: white;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.1s;
+        }
+
+        .about-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: 8px 8px 0 var(--color-accent);
+        }
+
+        .about-content h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: var(--color-text);
+        }
+
+        /* Services Section */
+        #services {
+            padding: 80px 5%;
+            background: var(--color-bg);
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.2s;
+        }
+
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .services-container h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 3rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 6px 6px 0 var(--color-surface);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translate(3px, 3px);
+            box-shadow: 3px 3px 0 var(--color-surface);
+        }
+
+        .service-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--color-text);
+        }
+
+        .services-image {
+            width: 100%;
+            max-width: 1200px;
+            margin: 3rem auto 0;
+            display: block;
+            border-radius: var(--border-radius);
+            box-shadow: 8px 8px 0 var(--color-accent);
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 80px 5%;
+            background: var(--color-surface);
+            color: white;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.3s;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-container h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+            text-align: left;
+            margin-top: 3rem;
+        }
+
+        .contact-info h3 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info a {
+            color: var(--color-accent);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #d98629;
+        }
+
+        .contact-image-wrapper {
+            position: relative;
+        }
+
+        .contact-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: 8px 8px 0 var(--color-accent);
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: var(--color-accent);
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-btn:hover {
+            background: #9e5c1d;
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+        }
+
+        .whatsapp-btn:hover {
+            background: #20ba5a;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .whatsapp-float::before {
+            content: '📱';
+            font-size: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-primary);
+            color: white;
+            padding: 2rem 5%;
+            text-align: center;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .hero-content .tagline {
+                font-size: 1.5rem;
+            }
+
+            .about-container,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-image,
+            .contact-image {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            #hero,
+            #about,
+            #services,
+            #contact {
+                padding: 48px 5%;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-content .tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .about-content h2,
+            .services-container h2,
+            .contact-container h2 {
+                font-size: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image,
+            .contact-image {
+                height: 300px;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+            }
+
+            .contact-btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-float::before {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#hero" class="logo">CyndyDelight</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <img src="https://images.pexels.com/photos/28988327/pexels-photo-28988327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="CyndyDelight Confectionery" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>CyndyDelight Confectionery</h1>
+            <p class="tagline">Sweetening Life's Special Moments</p>
+            <p>Welcome to CyndyDelight Confectionery – Where Every Bite Tells a Story of Quality and Taste. From freshly baked cakes to handcrafted pastries, we bring sweetness to your celebrations across Owerri and beyond. Experience the finest confectionery made with love, right here in Imo State.</p>
+            <a href="#contact" class="cta-button">Order Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <img src="https://images.pexels.com/photos/32184490/pexels-photo-32184490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About CyndyDelight" class="about-image">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>CyndyDelight Confectionery is a proud Nigerian confectionery manufacturer based in the heart of Owerri, Imo State. Located at 32A Orlu Road, Amakohia Uratta, we have built our reputation on delivering exceptional quality baked goods and confectioneries that make every occasion memorable.</p>
+                <p>Our state-of-the-art manufacturing facility combines traditional baking expertise with modern techniques to create products that delight the senses. From birthday cakes and wedding cakes to small chops, pastries, and everyday treats, we craft each item with premium ingredients and meticulous attention to detail.</p>
+                <p>Serving Owerri North and surrounding communities, we're committed to making your celebrations sweeter and your everyday moments more special. Our team of skilled bakers and confectioners work tirelessly to ensure every product that leaves our facility meets the highest standards of taste, freshness, and presentation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="services-container">
+            <h2>Our Products & Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Custom Celebration Cakes</h3>
+                    <p>Beautifully designed cakes for birthdays, weddings, anniversaries, and all special occasions. Each cake is customized to your specifications and crafted to perfection.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Pastries & Baked Goods</h3>
+                    <p>Fresh daily offerings including meat pies, sausage rolls, doughnuts, chin-chin, and an array of Nigerian and continental pastries.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Small Chops & Catering</h3>
+                    <p>Perfect for events and parties – puff-puff, samosa, spring rolls, and more. We cater to events of all sizes across Owerri.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Corporate & Bulk Orders</h3>
+                    <p>Special rates for businesses, organizations, and large orders. Reliable delivery and consistent quality for your corporate needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Dessert Tables</h3>
+                    <p>Complete dessert setup for weddings and events, featuring an elegant display of our finest confectioneries.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Wholesale Supply</h3>
+                    <p>We supply quality confectionery products to retailers, supermarkets, and businesses throughout Imo State.</p>
+                </div>
+            </div>
+            <img src="https://images.pexels.com/photos/18717492/pexels-photo-18717492.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Our Products" class="services-image">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Visit Us Today</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Ready to place an order or discuss your confectionery needs? We're here to serve you!</p>
+                    
+                    <h3>Location:</h3>
+                    <p>32A Orlu Road, Amakohia Uratta<br>
+                    Owerri North, Imo State<br>
+                    Nigeria</p>
+                    
+                    <h3>Phone:</h3>
+                    <p><a href="tel:+2347032342838">0703 234 2838</a></p>
+                    
+                    <h3>Email:</h3>
+                    <p><a href="mailto:info@cyndydelight.com">info@cyndydelight.com</a></p>
+                    
+                    <h3>Business Hours:</h3>
+                    <p>Monday - Saturday: 8:00 AM - 7:00 PM<br>
+                    Sunday: 10:00 AM - 5:00 PM</p>
+                    
+                    <p>Whether you're planning a grand celebration or simply craving something sweet, CyndyDelight Confectionery is your trusted partner. Contact us today for orders, inquiries, or to schedule a consultation for your next event.</p>
+                    
+                    <p>We offer delivery services across Owerri and surrounding areas. Advance orders are recommended for custom cakes and large events.</p>
+                    
+                    <div class="contact-buttons">
+                        <a href="tel:+2347032342838" class="contact-btn">Call Us</a>
+                        <a href="mailto:info@cyndydelight.com" class="contact-btn">Email Us</a>
+                        <a href="https://wa.me/2347032342838" class="contact-btn whatsapp-btn" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+                <div class="contact-image-wrapper">
+                    <img src="https://images.pexels.com/photos/34313607/pexels-photo-34313607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Visit Our Store" class="contact-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2347032342838" class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp"></a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CyndyDelight Confectionery. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
