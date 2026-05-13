@@ -1,0 +1,42 @@
+{
+  "businessName": "CyndyDelight Confectionery",
+  "industry": "Food Manufacturing & Confectionery",
+  "tone": "warm and inviting",
+  "tagline": "Sweetening Life's Special Moments",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to CyndyDelight Confectionery – Where Every Bite Tells a Story of Quality and Taste. From freshly baked cakes to handcrafted pastries, we bring sweetness to your celebrations across Owerri and beyond. Experience the finest confectionery made with love, right here in Imo State.",
+      "imagePrompt": "Photorealistic image of an elegant Nigerian bakery display with beautifully decorated cakes, colorful cupcakes, and artisan pastries arranged on a modern glass counter, warm golden lighting, professional food photography, inviting atmosphere with Nigerian cultural touches, high-end confectionery presentation",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "CyndyDelight Confectionery is a proud Nigerian confectionery manufacturer based in the heart of Owerri, Imo State. Located at 32A Orlu Road, Amakohia Uratta, we have built our reputation on delivering exceptional quality baked goods and confectioneries that make every occasion memorable.\n\nOur state-of-the-art manufacturing facility combines traditional baking expertise with modern techniques to create products that delight the senses. From birthday cakes and wedding cakes to small chops, pastries, and everyday treats, we craft each item with premium ingredients and meticulous attention to detail.\n\nServing Owerri North and surrounding communities, we're committed to making your celebrations sweeter and your everyday moments more special. Our team of skilled bakers and confectioners work tirelessly to ensure every product that leaves our facility meets the highest standards of taste, freshness, and presentation.",
+      "imagePrompt": "Photorealistic image of a modern Nigerian bakery kitchen with professional bakers in clean white uniforms working on cakes and pastries, stainless steel equipment, bright and hygienic environment, warm natural lighting, showing the craftsmanship and professionalism of African confectionery manufacturing",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Products & Services",
+      "copy": "**Custom Celebration Cakes**\nBeautifully designed cakes for birthdays, weddings, anniversaries, and all special occasions. Each cake is customized to your specifications and crafted to perfection.\n\n**Pastries & Baked Goods**\nFresh daily offerings including meat pies, sausage rolls, doughnuts, chin-chin, and an array of Nigerian and continental pastries.\n\n**Small Chops & Catering**\nPerfect for events and parties – puff-puff, samosa, spring rolls, and more. We cater to events of all sizes across Owerri.\n\n**Corporate & Bulk Orders**\nSpecial rates for businesses, organizations, and large orders. Reliable delivery and consistent quality for your corporate needs.\n\n**Dessert Tables**\nComplete dessert setup for weddings and events, featuring an elegant display of our finest confectioneries.\n\n**Wholesale Supply**\nWe supply quality confectionery products to retailers, supermarkets, and businesses throughout Imo State.",
+      "imagePrompt": "Photorealistic grid layout of Nigerian confectionery products including a three-tier wedding cake with Nigerian colors, golden meat pies, colorful small chops platter, decorated cupcakes, and traditional chin-chin in elegant bowls, professional food photography, vibrant colors, appetizing presentation",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Visit Us Today",
+      "copy": "Ready to place an order or discuss your confectionery needs? We're here to serve you!\n\n**Location:**\n32A Orlu Road, Amakohia Uratta\nOwerri North, Imo State\nNigeria\n\n**Phone:** 0703 234 2838\n\n**Business Hours:**\nMonday - Saturday: 8:00 AM - 7:00 PM\nSunday: 10:00 AM - 5:00 PM\n\nWhether you're planning a grand celebration or simply craving something sweet, CyndyDelight Confectionery is your trusted partner. Contact us today for orders, inquiries, or to schedule a consultation for your next event.\n\nWe offer delivery services across Owerri and surrounding areas. Advance orders are recommended for custom cakes and large events.",
+      "imagePrompt": "Photorealistic image of a welcoming Nigerian storefront with CyndyDelight Confectionery signage, glass display windows showing cakes and pastries, well-maintained exterior in Owerri setting, customers entering the shop, warm afternoon sunlight, professional retail photography, inviting atmosphere",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "0703 234 2838",
+    "email": "info@cyndydelight.com",
+    "address": "32A Orlu Road, Amakohia Uratta, Owerri North, Imo State, Nigeria",
+    "whatsapp": "https://wa.me/2347032342838"
+  }
+}
