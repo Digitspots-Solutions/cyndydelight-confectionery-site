@@ -1,41 +1,69 @@
 {
-  "businessName": "CyndyDelight Confectionery",
-  "industry": "Food Manufacturing & Confectionery",
-  "tone": "warm and inviting",
-  "tagline": "Sweetening Life's Special Moments",
+  "businessName": "Distinct Pharma Pay Hub Nigeria",
+  "industry": "Fintech",
+  "tone": "professional",
+  "tagline": "Empowering Healthcare Commerce with Seamless Digital Payment Solutions",
   "sections": [
     {
       "id": "hero",
       "name": "Hero",
-      "copy": "Welcome to CyndyDelight Confectionery – Where Every Bite Tells a Story of Quality and Taste. From freshly baked cakes to handcrafted pastries, we bring sweetness to your celebrations across Owerri and beyond. Experience the finest confectionery made with love, right here in Imo State.",
-      "imagePrompt": "Photorealistic image of an elegant Nigerian bakery display with beautifully decorated cakes, colorful cupcakes, and artisan pastries arranged on a modern glass counter, warm golden lighting, professional food photography, inviting atmosphere with Nigerian cultural touches, high-end confectionery presentation",
+      "copy": "Transform Your Pharmacy Business with Advanced Digital Banking Solutions. Distinct Pharma Pay Hub Nigeria delivers secure, efficient, and integrated financial technology designed specifically for healthcare providers and pharmaceutical businesses across Nigeria. Experience seamless transactions, real-time reconciliation, and comprehensive payment infrastructure that grows with your business.",
+      "imagePrompt": "Modern Nigerian pharmacy interior with digital payment terminals and mobile banking interface overlays, sleek glass counters with medication displays, professional pharmacists using tablets, bright clean lighting, fintech innovation aesthetic, blue and green color scheme representing trust and healthcare, ultra-realistic photography, 8k quality",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "CyndyDelight Confectionery is a proud Nigerian confectionery manufacturer based in the heart of Owerri, Imo State. Located at 32A Orlu Road, Amakohia Uratta, we have built our reputation on delivering exceptional quality baked goods and confectioneries that make every occasion memorable.\n\nOur state-of-the-art manufacturing facility combines traditional baking expertise with modern techniques to create products that delight the senses. From birthday cakes and wedding cakes to small chops, pastries, and everyday treats, we craft each item with premium ingredients and meticulous attention to detail.\n\nServing Owerri North and surrounding communities, we're committed to making your celebrations sweeter and your everyday moments more special. Our team of skilled bakers and confectioners work tirelessly to ensure every product that leaves our facility meets the highest standards of taste, freshness, and presentation.",
-      "imagePrompt": "Photorealistic image of a modern Nigerian bakery kitchen with professional bakers in clean white uniforms working on cakes and pastries, stainless steel equipment, bright and hygienic environment, warm natural lighting, showing the craftsmanship and professionalism of African confectionery manufacturing",
+      "copy": "Distinct Pharma Pay Hub Nigeria is a pioneering fintech company specializing in embedded finance solutions for the pharmaceutical and healthcare sector. Founded by an experienced Embedded Finance Architect, we understand the unique financial challenges faced by pharmacies, drug distributors, and healthcare providers across Nigeria. Our mission is to bridge the gap between traditional pharmaceutical commerce and modern digital banking, providing tailored payment infrastructure that ensures security, compliance, and operational efficiency. Based in Owerri, Imo State, we serve businesses throughout Nigeria with cutting-edge technology that simplifies transactions, improves cash flow management, and enhances customer experience. We combine deep industry expertise with innovative financial technology to deliver solutions that truly understand the pharmaceutical business landscape.",
+      "imagePrompt": "Professional Nigerian fintech team collaborating in modern office space in Owerri, diverse professionals analyzing financial data on large screens, pharmacy and healthcare symbols integrated with digital banking icons, warm natural lighting, contemporary African business environment, high-tech workspace with maps of Nigeria showing network connections, photorealistic style",
       "layout": "split"
     },
     {
       "id": "services",
-      "name": "Our Products & Services",
-      "copy": "**Custom Celebration Cakes**\nBeautifully designed cakes for birthdays, weddings, anniversaries, and all special occasions. Each cake is customized to your specifications and crafted to perfection.\n\n**Pastries & Baked Goods**\nFresh daily offerings including meat pies, sausage rolls, doughnuts, chin-chin, and an array of Nigerian and continental pastries.\n\n**Small Chops & Catering**\nPerfect for events and parties – puff-puff, samosa, spring rolls, and more. We cater to events of all sizes across Owerri.\n\n**Corporate & Bulk Orders**\nSpecial rates for businesses, organizations, and large orders. Reliable delivery and consistent quality for your corporate needs.\n\n**Dessert Tables**\nComplete dessert setup for weddings and events, featuring an elegant display of our finest confectioneries.\n\n**Wholesale Supply**\nWe supply quality confectionery products to retailers, supermarkets, and businesses throughout Imo State.",
-      "imagePrompt": "Photorealistic grid layout of Nigerian confectionery products including a three-tier wedding cake with Nigerian colors, golden meat pies, colorful small chops platter, decorated cupcakes, and traditional chin-chin in elegant bowls, professional food photography, vibrant colors, appetizing presentation",
+      "name": "Our Solutions",
+      "copy": "Digital Payment Gateway: Accept all payment methods including cards, bank transfers, USSD, and mobile money with industry-leading security and instant settlement. Pharmacy Management Integration: Seamlessly connect your inventory and sales systems with our payment infrastructure for automated reconciliation and real-time financial visibility. Embedded Lending Solutions: Provide your customers with flexible payment options through integrated buy-now-pay-later and credit facilities designed for pharmaceutical purchases. Multi-Channel Payment Processing: Enable payments across physical stores, online platforms, mobile apps, and delivery services from a single unified system. Compliance & Reporting: Automated regulatory compliance tools, comprehensive transaction reports, and audit-ready documentation tailored for pharmaceutical businesses. Virtual Accounts & Collections: Issue dedicated account numbers to customers and suppliers for seamless business-to-business transactions and improved cash flow management. Point-of-Sale Solutions: Advanced POS terminals with pharmacy-specific features, inventory tracking, and customer management capabilities.",
+      "imagePrompt": "Split-screen visualization showing various digital payment methods in Nigerian pharmacy settings: contactless card payment, mobile banking app, USSD code entry, QR code scanning, all overlaid on modern pharmacy environments with medicine shelves, professional color palette of deep blue and emerald green, clean interface design elements, highly detailed 3D renders",
       "layout": "grid"
     },
     {
+      "id": "benefits",
+      "name": "Why Choose Distinct Pharma Pay Hub",
+      "copy": "Healthcare-Focused Expertise: Unlike generic payment providers, we specialize exclusively in pharmaceutical and healthcare commerce, understanding your unique regulatory requirements and operational workflows. Comprehensive Integration: Our solutions integrate with major pharmacy management software, accounting systems, and inventory platforms used across Nigeria. Enhanced Security: Bank-level encryption, PCI-DSS compliance, and fraud detection specifically calibrated for pharmaceutical transactions protect your business and customers. Local Support: Based in Owerri with deep understanding of Nigerian business environment, we provide responsive local support in multiple Nigerian languages. Transparent Pricing: Clear, competitive pricing with no hidden fees—we believe in building long-term partnerships, not extracting maximum charges. Scalable Infrastructure: Whether you operate a single pharmacy or a chain of outlets across multiple states, our technology scales effortlessly with your growth. Real-Time Analytics: Comprehensive dashboards provide instant insights into sales performance, payment trends, and financial metrics to inform business decisions.",
+      "imagePrompt": "Infographic-style visualization showing connected pharmacy locations across Nigerian map, security shield icons, growth charts with upward trends, Nigerian currency symbols, handshake between business partners, modern minimalist design with healthcare blue and financial green accents, clean professional aesthetic, photorealistic rendering with data visualization elements",
+      "layout": "cards"
+    },
+    {
+      "id": "process",
+      "name": "How It Works",
+      "copy": "Step 1 - Business Assessment: Contact us for a comprehensive evaluation of your pharmacy's payment needs, transaction volumes, and integration requirements. Our team will design a customized solution that fits your specific business model. Step 2 - Quick Onboarding: Complete our streamlined registration process with minimal documentation. We handle all regulatory compliance and banking relationships on your behalf, typically completing setup within 48-72 hours. Step 3 - Seamless Integration: Our technical team works with your existing systems to integrate our payment infrastructure. We provide full training for your staff and ensure zero disruption to your daily operations. Step 4 - Go Live & Grow: Start accepting payments immediately across all channels. Our ongoing support team monitors your account, optimizes performance, and provides strategic guidance to maximize your financial efficiency as your business expands.",
+      "imagePrompt": "Professional workflow diagram showing four stages of pharmacy payment integration: consultation meeting between business owner and fintech consultant, documents and digital forms, technical setup with computers and pharmacy systems, successful transaction with happy customers, set in modern Nigerian business environment, clean linear progression, bright optimistic lighting, photorealistic quality",
+      "layout": "default"
+    },
+    {
+      "id": "testimonials",
+      "name": "Client Success Stories",
+      "copy": "\"Distinct Pharma Pay Hub transformed our pharmacy chain's operations. We now process payments 3x faster and our monthly reconciliation that used to take days is now automated. The embedded lending feature has also increased our average transaction value significantly.\" - Chioma Okafor, PharmaCare Plus, Lagos. \"As a small pharmacy in Owerri, I was skeptical about fintech solutions, but the team made integration so simple. The local support in Igbo helped my staff adapt quickly, and our customers love the multiple payment options. Revenue is up 45% since we started.\" - Emeka Nwachukwu, Wellness Pharmacy, Owerri. \"The compliance and reporting features are outstanding. As a regulated pharmaceutical distributor, having audit-ready transaction records has simplified our regulatory submissions immensely. Plus, the virtual accounts for our suppliers have streamlined our B2B payments.\" - Dr. Funmi Adeyemi, MedSupply Distribution, Abuja.",
+      "imagePrompt": "Collage of satisfied Nigerian pharmacy owners and managers in their well-stocked pharmacies, diverse ages and backgrounds, some holding tablets showing payment dashboards, modern pharmacy interiors in Lagos, Owerri, and Abuja, authentic smiles, professional attire, warm lighting suggesting success and satisfaction, documentary photography style, high resolution",
+      "layout": "cards"
+    },
+    {
+      "id": "faq",
+      "name": "Frequently Asked Questions",
+      "copy": "What types of businesses can use Distinct Pharma Pay Hub? We serve community pharmacies, hospital pharmacies, pharmaceutical distributors, medical supply stores, and healthcare facilities of all sizes across Nigeria. How long does setup take? Most businesses are fully operational within 48-72 hours. Complex integrations with multiple locations may take up to one week, with our technical team managing the entire process. What are your transaction fees? Our pricing is transparent and competitive, typically ranging from 0.5% to 1.5% depending on transaction volume and payment method. We provide custom quotes based on your specific business needs with no hidden charges. Is my customer data secure? Absolutely. We employ bank-level 256-bit encryption, are PCI-DSS compliant, and follow all Central Bank of Nigeria data protection guidelines. Your customer information is never shared with third parties. Can I integrate with my existing pharmacy software? Yes. We have pre-built integrations with major pharmacy management systems used in Nigeria and can develop custom integrations for specialized software. What payment methods do you support? We support all major payment methods: Verve, Mastercard, Visa cards; bank transfers; USSD codes; mobile money (including Paga, OPay); QR codes; and cash collection with digital receipts. Do you provide hardware like POS terminals? Yes. We supply modern POS terminals optimized for pharmacy operations, including receipt printers and barcode scanners. Hardware costs are separate from transaction fees. What kind of support do you offer? We provide 24/7 technical support via phone, WhatsApp, and email. Our Owerri-based team offers support in English, Igbo, Yoruba, and Pidgin. We also provide on-site assistance for businesses in the South-East region.",
+      "imagePrompt": "Clean modern FAQ interface design displayed on multiple devices (smartphone, tablet, laptop), showing question and answer format with pharmacy and fintech icons, Nigerian business context visible in background through office window showing Owerri cityscape, professional blue and white color scheme, crisp typography, 3D rendered with photorealistic lighting",
+      "layout": "default"
+    },
+    {
       "id": "contact",
-      "name": "Visit Us Today",
-      "copy": "Ready to place an order or discuss your confectionery needs? We're here to serve you!\n\n**Location:**\n32A Orlu Road, Amakohia Uratta\nOwerri North, Imo State\nNigeria\n\n**Phone:** 0703 234 2838\n\n**Business Hours:**\nMonday - Saturday: 8:00 AM - 7:00 PM\nSunday: 10:00 AM - 5:00 PM\n\nWhether you're planning a grand celebration or simply craving something sweet, CyndyDelight Confectionery is your trusted partner. Contact us today for orders, inquiries, or to schedule a consultation for your next event.\n\nWe offer delivery services across Owerri and surrounding areas. Advance orders are recommended for custom cakes and large events.",
-      "imagePrompt": "Photorealistic image of a welcoming Nigerian storefront with CyndyDelight Confectionery signage, glass display windows showing cakes and pastries, well-maintained exterior in Owerri setting, customers entering the shop, warm afternoon sunlight, professional retail photography, inviting atmosphere",
+      "name": "Get Started Today",
+      "copy": "Ready to revolutionize your pharmacy's payment infrastructure? Contact Distinct Pharma Pay Hub Nigeria today for a free consultation and customized solution proposal. Whether you're a single pharmacy looking to modernize payment acceptance or a pharmaceutical chain seeking comprehensive embedded finance solutions, our team is ready to help you achieve seamless financial operations. Visit our office in Owerri, call us directly, send a WhatsApp message, or email us with your requirements. Let's build the future of pharmaceutical commerce together.",
+      "imagePrompt": "Inviting modern office reception area in Owerri with Distinct Pharma Pay Hub Nigeria branding, friendly Nigerian receptionist at sleek desk, large windows showing Orlu Road, comfortable seating area with pharmacy and fintech magazines, digital displays showing services, professional yet welcoming atmosphere, natural daylight, architectural photography style, ultra high definition",
       "layout": "centered"
     }
   ],
   "contact": {
-    "phone": "0703 234 2838",
-    "email": "info@cyndydelight.com",
+    "phone": "+234 703 234 2838",
+    "email": "info@distinctpharma.org",
     "address": "32A Orlu Road, Amakohia Uratta, Owerri North, Imo State, Nigeria",
     "whatsapp": "https://wa.me/2347032342838"
   }
